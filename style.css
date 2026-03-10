@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'popins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    /* border: 1px solid black; */
+    background: linear-gradient(135deg, #1d1577, #085f41);
+    padding: 30px;
+}
+.todo-list{
+    /* height: 500px; */
+    width: 100%;
+    max-width: 540px;
+    border: 1px solid black;
+    margin: 100px auto 20px;
+    padding: 30px 30px 70px;
+    background: #fff;
+    border-radius: 10px;
+}
+.todo-list h2{
+    color: rgb(0, 46, 92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+}
+.todo-list h2 img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-radius: 30px;
+    background: #edeef0;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #1d9b30;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 16px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/Radio-Button-Unchecked--Streamline-Sharp-Material-Symbols.png);
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/pngwing.com.png);
+}
+ul li span{
+    position:absolute;
+    top: 5px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(36, 35, 35);
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    color: red;
+    background: #cccdce;
+}
