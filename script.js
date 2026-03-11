@@ -9,9 +9,15 @@ function add(){
         let li=document.createElement('li');
         li.innerHTML=inpTag.value;
         listContainer.appendChild(li);
+        
         let span=document.createElement('span');
         span.innerHTML="\u00d7";
         li.appendChild(span);
+
+        let btn=document.createElement('button');
+        btn.innerHTML="Edit";
+        btn.classList.add('edit-btn');
+        li.appendChild(btn);
     }
     inpTag.value='';
     saveData();
@@ -25,6 +31,16 @@ listContainer.addEventListener('click',function(e){
     else if(e.target.tagName==='SPAN'){
         e.target.parentElement.remove();
         saveData();
+    }else if(e.target.classList.contains('edit-btn')){
+        let li = e.target.parentElement;
+        let currentText = li.firstChild.textContent;
+
+        let newText = prompt("Edit your task:", currentText);
+
+        if(newText !== null && newText.trim() !== ""){
+            li.firstChild.textContent = newText;
+            saveData();
+        }
     }
 },false);
 

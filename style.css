@@ -51,7 +51,7 @@ input{
     background: transparent;
     padding: 10px;
 }
-button{
+.Add-btn{
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -61,6 +61,30 @@ button{
     border-radius: 40px;
     font-size: 16px;
 }
+.edit-btn{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #1d529b;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 16px;
+    position:absolute;
+    top: 0px;
+    right: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 2px;
+    /* gap: 5px; */
+    /* font-size: 22px; */
+    /* color: rgb(36, 35, 35); */
+    /* line-height: 40px; */
+    /* text-align: center; */
+}
 ul li{
     list-style: none;
     font-size: 17px;
@@ -68,6 +92,7 @@ ul li{
     user-select: none;
     cursor: pointer;
     position: relative;
+    margin-top: 10px;
 }
 ul li::before{
     content: '';
