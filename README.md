@@ -36,11 +36,21 @@ A simple and interactive To-Do List application built with HTML, CSS, and JavaSc
 ### Screenshots
 
 #### 1. Main To-Do List Interface
+<<<<<<< HEAD
 ![Main To-Do List Interface](images/screenshot1.png)
 *Shows the To-Do List app with tasks added, one marked as completed (strikethrough), and the delete option for each task.*
 
 #### 2. After Deleting a Task
 ![After Deleting a Task](images/screenshot2.png)
+=======
+![Main To-Do List Interface](images/screenshot1.png)<img width="1918" height="888" alt="Screenshot 2026-03-11 022047" src="https://github.com/user-attachments/assets/173552f8-9db2-4969-844f-5b0d8a92d4ad" />
+*Shows the To-Do List app with tasks added, one marked as completed (strikethrough), and the delete option for each task.*
+
+#### 2. After Deleting a Task
+![After Deleting a Task](images/screenshot2.png)<img width="1918" height="888" alt="Screenshot 2026-03-11 021927" src="https://github.com/user-attachments/assets/1e067424-c820-484e-ba71-291afdce2bb1" />
+
+
+>>>>>>> 6866c36b4bdbf317ddcb41db06710d6d380e30a5
 *Displays the To-Do List after a task has been deleted, demonstrating the dynamic update of the list.*
 
 
@@ -50,4 +60,8 @@ Feel free to fork the repository and submit pull requests for improvements or bu
 
 ## License
 
+<<<<<<< HEAD
 This project is open-source and available under the [MIT License](LICENSE).
+=======
+This project is open-source and available under the [MIT License](LICENSE).
+>>>>>>> 6866c36b4bdbf317ddcb41db06710d6d380e30a5
